@@ -1,0 +1,440 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14724,        430]
+NotebookOptionsPosition[     14308,        413]
+NotebookOutlinePosition[     14662,        429]
+CellTagsIndexPosition[     14619,        426]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "ao", ",", "at", ",", "bz", ",", "bo", ",", "bt", ",", "kf", ",", "kb", 
+     ",", "Kdt", ",", "Kdh", ",", "nl", ",", "ne", ",", "ubz", ",", "ubt", 
+     ",", "ubh", ",", "A", ",", "Nf", ",", "Kd"}], "}"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "284", ",", "0.32`", ",", "0.17`", ",", "0.5`", ",", "0.99`", ",", "78", 
+     ",", "370", ",", "0.9`", ",", "0.015`", ",", "0.525`", ",", "22.5`", ",",
+      "46.5`", ",", "0.464`", ",", "12.35`", ",", "14.8`", ",", "2", ",", 
+     RowBox[{"2", "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"-", "5"}]}]}]}], "}"}]}], ";"}]], "Input",ExpressionUUID->\
+"29a29011-0f76-4467-8db5-aa1a5ec40a16"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"Af", "[", "x", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       RowBox[{
+        RowBox[{"(", "x", ")"}], "/", "A"}], "-", 
+       RowBox[{"Kd", "/", "A"}], "+", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "-", 
+            RowBox[{
+             RowBox[{"(", "x", ")"}], "/", "A"}], "-", 
+            RowBox[{"Kd", "/", "A"}]}], ")"}], "^", "2"}], "+", 
+         RowBox[{"4", "*", 
+          RowBox[{"Kd", "/", "A"}]}]}], "]"}]}], ")"}], "/", "2"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"aone", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"perm", "'"}], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"ao", "*", 
+         RowBox[{"Af", "[", 
+          RowBox[{
+           RowBox[{"(", "pern", ")"}], "[", "t", "]"}], "]"}]}], "-", 
+        RowBox[{"bz", "*", 
+         RowBox[{"perm", "[", "t", "]"}]}]}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "p53c", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{"at", "-", 
+        RowBox[{"nl", " ", 
+         RowBox[{
+          RowBox[{"(", "p53c", ")"}], "[", "t", "]"}]}], "-", 
+        FractionBox[
+         RowBox[{"ubz", " ", 
+          RowBox[{
+           RowBox[{"(", "p53c", ")"}], "[", "t", "]"}]}], 
+         RowBox[{"Kdt", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], "Kdt"], "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}], "Kdh"]}], 
+           ")"}]}]], "-", 
+        RowBox[{"kf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53c", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "p53n", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"nl", " ", 
+         RowBox[{
+          RowBox[{"(", "p53c", ")"}], "[", "t", "]"}]}], "-", 
+        FractionBox[
+         RowBox[{"Nf", " ", "ubh", " ", 
+          RowBox[{
+           RowBox[{"(", "p53n", ")"}], "[", "t", "]"}]}], 
+         RowBox[{"Kdt", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            FractionBox[
+             RowBox[{"Nf", " ", 
+              RowBox[{
+               RowBox[{"(", "p53n", ")"}], "[", "t", "]"}]}], "Kdt"]}], 
+           ")"}]}]], "-", 
+        RowBox[{"kf", " ", "Nf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53n", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "pern", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"bo", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53n", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53n", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "p53mc", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"ubz", " ", 
+          RowBox[{
+           RowBox[{"(", "p53c", ")"}], "[", "t", "]"}]}], 
+         RowBox[{"Kdt", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], "Kdt"], "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}], "Kdh"]}], 
+           ")"}]}]], "-", 
+        FractionBox[
+         RowBox[{"ubt", " ", 
+          RowBox[{
+           RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}]}], 
+         RowBox[{"Kdh", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], "Kdt"], "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}], "Kdh"]}], 
+           ")"}]}]], "+", 
+        RowBox[{"ne", " ", 
+         RowBox[{
+          RowBox[{"(", "p53mn", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53mc", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "p53mn", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"Nf", " ", "ubh", " ", 
+          RowBox[{
+           RowBox[{"(", "p53n", ")"}], "[", "t", "]"}]}], 
+         RowBox[{"Kdt", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            FractionBox[
+             RowBox[{"Nf", " ", 
+              RowBox[{
+               RowBox[{"(", "p53n", ")"}], "[", "t", "]"}]}], "Kdt"]}], 
+           ")"}]}]], "-", 
+        RowBox[{"ne", " ", 
+         RowBox[{
+          RowBox[{"(", "p53mn", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kf", " ", "Nf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53mn", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "pern", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"bo", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53mn", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53mn", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "p53pc", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"ubt", " ", 
+          RowBox[{
+           RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}]}], 
+         RowBox[{"Kdh", " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], "Kdt"], "+", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}], "Kdh"]}], 
+           ")"}]}]], "-", 
+        RowBox[{"bt", " ", 
+         RowBox[{
+          RowBox[{"(", "p53pc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53pc", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53pc", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "perc", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"ao", " ", 
+         RowBox[{"perm", "[", "t", "]"}]}], "-", 
+        RowBox[{"nl", " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kf", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], "+", 
+           FractionBox[
+            RowBox[{"kf", " ", 
+             RowBox[{
+              RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}]}], "kf"], "+", 
+           FractionBox[
+            RowBox[{"kf", " ", 
+             RowBox[{
+              RowBox[{"(", "p53pc", ")"}], "[", "t", "]"}]}], "kf"]}], ")"}], 
+         " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"bt", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53pc", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", "perp53c", ")"}], "[", "t", "]"}], "+", 
+           RowBox[{
+            RowBox[{"(", "perp53mc", ")"}], "[", "t", "]"}], "+", 
+           RowBox[{
+            RowBox[{"(", "perp53pc", ")"}], "[", "t", "]"}]}], ")"}]}]}]}], 
+      ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "pern", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"nl", " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"bo", " ", 
+         RowBox[{
+          RowBox[{"(", "pern", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kf", " ", "Nf", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", "p53n", ")"}], "[", "t", "]"}], "+", 
+           FractionBox[
+            RowBox[{"kf", " ", 
+             RowBox[{
+              RowBox[{"(", "p53mn", ")"}], "[", "t", "]"}]}], "kf"], "+", 
+           FractionBox[
+            RowBox[{"kf", " ", 
+             RowBox[{
+              RowBox[{"(", "p53pn", ")"}], "[", "t", "]"}]}], "kf"]}], ")"}], 
+         " ", 
+         RowBox[{
+          RowBox[{"(", "pern", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"kb", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", "perp53n", ")"}], "[", "t", "]"}], "+", 
+           RowBox[{
+            RowBox[{"(", "perp53mn", ")"}], "[", "t", "]"}]}], ")"}]}]}]}], 
+      ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "perp53c", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"kf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53c", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53c", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"nl", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53c", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "perp53n", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"kf", " ", "Nf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53n", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "pern", ")"}], "[", "t", "]"}]}], "+", 
+        RowBox[{"nl", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53c", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"bo", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53n", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53n", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "perp53mc", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"kf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53mc", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53mc", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "perp53mn", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"kf", " ", "Nf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53mn", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "pern", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"bo", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53mn", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53mn", ")"}], "[", "t", "]"}]}]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", "perp53pc", ")"}], "\[Prime]",
+         MultilineFunction->None], "[", "t", "]"}], "\[Equal]", 
+       RowBox[{
+        RowBox[{"kf", " ", 
+         RowBox[{
+          RowBox[{"(", "p53pc", ")"}], "[", "t", "]"}], " ", 
+         RowBox[{
+          RowBox[{"(", "perc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"bt", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53pc", ")"}], "[", "t", "]"}]}], "-", 
+        RowBox[{"kb", " ", 
+         RowBox[{
+          RowBox[{"(", "perp53pc", ")"}], "[", "t", "]"}]}]}]}]}], "}"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.747261538232806*^9, 3.7472615418635893`*^9}, 
+   3.747262258140909*^9},ExpressionUUID->"94196a6b-fe66-46dd-b6c1-\
+b7c86677bc7a"]
+},
+WindowSize->{1348, 726},
+WindowMargins->{{Automatic, 1}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 709, 16, 54, "Input", "ExpressionUUID" -> \
+"29a29011-0f76-4467-8db5-aa1a5ec40a16"],
+Cell[1270, 38, 13034, 373, 583, "Input", "ExpressionUUID" -> \
+"94196a6b-fe66-46dd-b6c1-b7c86677bc7a"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
